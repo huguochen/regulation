@@ -1,12 +1,14 @@
 # 内容：OpenAi Bard anthropic
+
 # 域名关键字匹配
 DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,anthropic
-DOMAIN-KEYWORD,Claude
 DOMAIN-KEYWORD,copilot
 DOMAIN-KEYWORD,gemini
+DOMAIN-KEYWORD,Claude
+DOMAIN-KEYWORD,perplexity
+DOMAIN-KEYWORD,anthropic
+
 # 域名后缀匹配
-DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,client-api.arkoselabs.com
@@ -19,12 +21,13 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai.com
-DOMAIN-SUFFIX,bing.com
-DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,stripe.com
