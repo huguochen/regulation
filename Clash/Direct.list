@@ -1,6 +1,8 @@
 # 直连补充列表(国内域名不解析时，防止走代理使用)
 
 # My
+DOMAIN-KEYWORD,pengshengeyesoft
+
 DOMAIN-SUFFIX,hgc.plus
 DOMAIN-SUFFIX,cnopo.com
 DOMAIN-SUFFIX,pengshengeyesoft.com
