@@ -1,0 +1,129 @@
+[custom]
+
+ruleset=🤖 MyAI,https://raw.githubusercontent.com/huguochen/regulation/main/Clash/AI.list
+ruleset=🤖 人工智能,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+ruleset=🤖 人工智能,https://raw.githubusercontent.com/juewuy/ShellClash/master/rules/ai.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/huguochen/regulation/main/Clash/Direct.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+ruleset=📢 谷歌FCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+ruleset=🛑 广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+ruleset=🛑 广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+ruleset=💬 GitHub,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
+ruleset=👨🏿‍💻 Docker,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Docker.list
+ruleset=🐬 OneDrive,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
+ruleset=🪟 微软服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+ruleset=🍎 苹果服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+ruleset=🍀 谷歌服务,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list
+ruleset=📲 电报消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+ruleset=📹 YouTube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+ruleset=📺 国外媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+ruleset=🎯 全球直连,[]GEOIP,CN
+ruleset=🐟 漏网之鱼,[]FINAL
+
+custom_proxy_group=🚀 节点选择`select`[]🇸🇬 狮城节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]🇨🇳 台湾节点`[]🇭🇰 香港节点`[]♻️ 自动选择`[]🎮 手动切换
+custom_proxy_group=🎮 手动切换`select`.*
+custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🤖 MyAI`select`[]🎮 手动切换`[]🚀 节点选择`[]🇸🇬 狮城节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]♻️ 自动选择
+custom_proxy_group=🤖 人工智能`select`[]🎮 手动切换`[]🚀 节点选择`[]🇸🇬 狮城节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]♻️ 自动选择
+custom_proxy_group=💬 GitHub`select`[]♻️ 自动选择`[]🚀 节点选择`[]🇸🇬 狮城节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]🎮 手动切换
+custom_proxy_group=👨🏿‍💻 Docker`select`[]♻️ 自动选择`[]🚀 节点选择`[]🇸🇬 狮城节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]🎮 手动切换
+custom_proxy_group=🐬 OneDrive`select`[]🎯 全球直连`[]🚀 节点选择`[]♻️ 自动选择`[]🎮 手动切换
+custom_proxy_group=🪟 微软服务`select`[]🎯 全球直连`[]🚀 节点选择`[]♻️ 自动选择`[]🎮 手动切换
+custom_proxy_group=📢 谷歌FCM`select`[]🚀 节点选择`[]♻️ 自动选择`[]🎮 手动切换
+custom_proxy_group=🍀 谷歌服务`select`[]🚀 节点选择`[]♻️ 自动选择`[]🎮 手动切换
+custom_proxy_group=🍎 苹果服务`select`[]🎯 全球直连`[]🚀 节点选择`[]♻️ 自动选择`[]🎮 手动切换
+custom_proxy_group=📲 电报消息`select`[]♻️ 自动选择`[]🚀 节点选择`[]🎮 手动切换
+custom_proxy_group=📹 YouTube`select`[]🚀 节点选择`[]♻️ 自动选择`[]🎮 手动切换`[]🇸🇬 狮城节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]🇨🇳 台湾节点`[]🇭🇰 香港节点
+custom_proxy_group=📺 国外媒体`select`[]🚀 节点选择`[]♻️ 自动选择`[]🎮 手动切换`[]🇸🇬 狮城节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]🇨🇳 台湾节点`[]🇭🇰 香港节点
+custom_proxy_group=🎯 全球直连`select`[]DIRECT`[]🚀 节点选择`[]🇨🇳 台湾节点`[]🇭🇰 香港节点
+custom_proxy_group=🛑 广告拦截`select`[]REJECT`[]DIRECT
+custom_proxy_group=🐟 漏网之鱼`select`[]♻️ 自动选择`[]🎯 全球直连`[]🚀 节点选择`[]🎮 手动切换
+custom_proxy_group=🇸🇬 狮城节点`url-test`(新加坡|坡|狮城|SG|Singapore)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🇺🇲 美国节点`url-test`(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)`http://www.gstatic.com/generate_204`300,,150
+custom_proxy_group=🇯🇵 日本节点`url-test`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🇰🇷 韩国节点`url-test`(KR|Korea|KOR|首尔|韩|韓)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🇭🇰 香港节点`url-test`(港|HK|hk|Hong Kong|HongKong|hongkong)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🇨🇳 台湾节点`url-test`(台|新北|彰化|TW|Taiwan)`http://www.gstatic.com/generate_204`300,,50
+
+enable_rule_generator=true
+overwrite_original_rules=true
+
+;🍃📹💬🙋➡️🐬🔮🔯
+
+
+;ruleset=🎯 全球直连,[]GEOSITE,CN
+;ruleset=🚀 节点选择,[]GEOSITE,geolocation-!cn
+;ruleset=🎯 全球直连,[]GEOIP,CN,no-resolve
+;ruleset=🐟 漏网之鱼,[]FINAL
+
+
+[custom]
+
+ruleset=🤖 AI,https://raw.githubusercontent.com/huguochen/regulation/main/Clash/AI.list
+ruleset=✨ 人工智能,https://raw.githubusercontent.com/juewuy/ShellClash/master/rules/ai.list
+ruleset=🕊️ Twitter(X),https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/huguochen/regulation/main/Clash/Direct.list
+ruleset=📘 GitHub,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list
+ruleset=💻 Docker,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Docker.list
+ruleset=🪟 OneDrive,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
+ruleset=💾 Microsoft,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.list
+ruleset=🍎 Apple,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.list
+ruleset=📢 谷歌FCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+ruleset=🍀 Google,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list
+ruleset=📲 Telegram,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list
+ruleset=🎞️ YouTube,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list
+ruleset=🎶 TikTok,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TikTok/TikTok.list
+ruleset=🗣️ Facebook,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Facebook/Facebook.list
+ruleset=🌳 Amazon,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Amazon/Amazon.list
+ruleset=📺 Disney,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list
+ruleset=🎥 Netflix,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list
+ruleset=🎬 HBO MAX,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/HBO/HBO.list
+ruleset=🎵 Spotify,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+ruleset=🌍 国外,https://raw.githubusercontent.com/huguochen/regulation/refs/heads/main/Clash/Proxy.list
+ruleset=🌍 国外,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list
+ruleset=🤌 兜底,[]FINAL
+
+custom_proxy_group=🚀 节点选择`select`[]🇸🇬 狮城节点`[]🇨🇳 台湾节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]🇭🇰 香港节点`[]🙋 IPV6`[]♻️ 自动选择`[]💬 手动切换
+custom_proxy_group=💬 手动切换`select`.*
+custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=🤖 AI`select`[]💬 手动切换`[]🚀 节点选择`[]🇸🇬 狮城节点`[]🇨🇳 台湾节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]🙋 IPV6`[]♻️ 自动选择
+custom_proxy_group=✨ 人工智能`select`[]💬 手动切换`[]🚀 节点选择`[]🇸🇬 狮城节点`[]🇨🇳 台湾节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]🙋 IPV6`[]♻️ 自动选择
+custom_proxy_group=🕊️ Twitter(X)`select`[]🚀 节点选择`[]💬 手动切换`[]🇸🇬 狮城节点`[]🇨🇳 台湾节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]🙋 IPV6`[]♻️ 自动选择
+custom_proxy_group=🎯 全球直连`select`[]DIRECT`[]🚀 节点选择`[]🇨🇳 台湾节点`[]🇭🇰 香港节点
+custom_proxy_group=📘 GitHub`select`[]♻️ 自动选择`[]🚀 节点选择`[]🙋 IPV6`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]💬 手动切换
+custom_proxy_group=💻 Docker`select`[]♻️ 自动选择`[]🚀 节点选择`[]🙋 IPV6`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]💬 手动切换
+custom_proxy_group=🪟 OneDrive`select`[]🎯 全球直连`[]🚀 节点选择`[]♻️ 自动选择
+custom_proxy_group=💾 Microsoft`select`[]🎯 全球直连`[]🚀 节点选择`[]♻️ 自动选择
+custom_proxy_group=🍎 Apple`select`[]🎯 全球直连`[]🚀 节点选择`[]♻️ 自动选择
+custom_proxy_group=📢 谷歌FCM`select`[]🚀 节点选择`[]♻️ 自动选择`[]💬 手动切换
+custom_proxy_group=🍀 Google`select`[]🚀 节点选择`[]♻️ 自动选择`[]🙋 IPV6`[]💬 手动切换
+custom_proxy_group=📲 Telegram`select`[]♻️ 自动选择`[]🙋 IPV6`[]🚀 节点选择`[]💬 手动切换
+custom_proxy_group=🎞️ YouTube`select`[]🚀 节点选择`[]♻️ 自动选择`[]🙋 IPV6`[]💬 手动切换`[]🇸🇬 狮城节点`[]🇨🇳 台湾节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]🇭🇰 香港节点
+custom_proxy_group=🎶 TikTok`select`[]🚀 节点选择`[]♻️ 自动选择`[]🙋 IPV6`[]💬 手动切换`[]🇸🇬 狮城节点`[]🇨🇳 台湾节点`[]🇺🇲 美国节点`[]🇯🇵 日本节点`[]🇰🇷 韩国节点`[]🇭🇰 香港节点
+custom_proxy_group=🗣️ Facebook`select`[]🚀 节点选择`[]🙋 IPV6`[]♻️ 自动选择`[]💬 手动切换
+custom_proxy_group=🌳 Amazon`select`[]🚀 节点选择`[]🙋 IPV6`[]♻️ 自动选择`[]💬 手动切换`[]🎯 全球直连
+custom_proxy_group=📺 Disney`select`[]🚀 节点选择`[]🙋 IPV6`[]♻️ 自动选择`[]💬 手动切换
+custom_proxy_group=🎥 Netflix`select`[]🚀 节点选择`[]🙋 IPV6`[]♻️ 自动选择`[]💬 手动切换
+custom_proxy_group=🎬 HBO MAX`select`[]🚀 节点选择`[]🙋 IPV6`[]♻️ 自动选择`[]💬 手动切换
+custom_proxy_group=🎵 Spotify`select`[]🚀 节点选择`[]🙋 IPV6`[]♻️ 自动选择`[]💬 手动切换
+custom_proxy_group=🌍 国外`select`[]♻️ 自动选择`[]🙋 IPV6`[]🚀 节点选择`[]💬 手动切换
+custom_proxy_group=🤌 兜底`select`[]🎯 全球直连`[]🚀 节点选择`[]♻️ 自动选择
+
+custom_proxy_group=🙋 IPV6`select`(?i)(ipv6|v6)
+custom_proxy_group=🇸🇬 狮城节点`url-test`(广新|新加坡|坡|狮城|SG|Singapore|🇸🇬)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=🇨🇳 台湾节点`url-test`(广台|台湾|台灣|台|新北|彰化|TW|Taiwan|Tai Wan|TaiWan|🇹🇼)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=🇺🇲 美国节点`url-test`(广美|美|纽约|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|🇺🇸)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=🇯🇵 日本节点`url-test`(广日|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=🇰🇷 韩国节点`url-test`(广韩|韩国|韓國|首尔|春川|韩|韓|KR|Korea|KOR|🇰🇷)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=🇭🇰 香港节点`url-test`(广港|香港|港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=🍃 其他-自动`url-test`(波|柬|斯|尼|也|克|比|尔|立|冰|秘|耳|利|埃|希|斯|孟|芬|阿|愛|澳|英|德|南|意|法|拿|墨|印|越|俄|瑞|智|荷|比|巴|沙|班|泰|德|烏|以|Australia|Konghwaguk)`http://www.gstatic.com/generate_204`60,150
+
+enable_rule_generator=true
+overwrite_original_rules=true
