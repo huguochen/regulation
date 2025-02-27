@@ -8,8 +8,7 @@ DOMAIN-KEYWORD,Claude
 DOMAIN-KEYWORD,perplexity
 DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,chatgpt
-DOMAIN,bard.google.com
-DOMAIN,ai.google.dev
+DOMAIN-KEYWORD,grok
 
 # 域名后缀匹配
 DOMAIN-SUFFIX,chatgpt.com
@@ -53,3 +52,5 @@ DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,civitai.com
 DOMAIN-SUFFIX,opera-api.com
 DOMAIN-SUFFIX,ciciai.com
+DOMAIN-SUFFIX,grok.com
+
