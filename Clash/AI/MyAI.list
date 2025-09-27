@@ -1,40 +1,104 @@
-# 内容：MyAI
+# =========================
+# OpenAI
+# =========================
+DOMAIN-SUFFIX,chatgpt.com             # OpenAI ChatGPT 主站
+DOMAIN-SUFFIX,openai.com              # OpenAI 主站及 API
+DOMAIN-SUFFIX,oaiusercontent.com      # OpenAI 用户内容托管
 
+# =========================
+# Microsoft (Copilot / Bing)
+# =========================
+DOMAIN-SUFFIX,copilot.cloud.microsoft # Microsoft Copilot API
+DOMAIN-SUFFIX,copilot.microsoft.com   # Microsoft Copilot 主站
+DOMAIN-SUFFIX,bing.com                # Bing Chat / Copilot 集成
+
+# =========================
+# Google (Gemini / DeepMind)
+# =========================
+DOMAIN-SUFFIX,aistudio.google.com     # Google AI Studio
+DOMAIN-SUFFIX,bard.google.com         # Google Bard (现多重定向到 Gemini)
+DOMAIN-SUFFIX,gemini.google.com       # Google Gemini 主站
+DOMAIN-SUFFIX,makersuite.google.com   # Google MakerSuite
+DOMAIN-SUFFIX,deepmind.com            # Google DeepMind 主站
+
+# =========================
+# Anthropic (Claude)
+# =========================
+DOMAIN-SUFFIX,anthropic.com           # Anthropic 主站及 API
+DOMAIN-SUFFIX,claude.ai               # Anthropic Claude 主站
+
+# =========================
+# Meta (LLaMA / AI 实验)
+# =========================
 DOMAIN-SUFFIX,meta.ai                 # Meta AI 主站
 DOMAIN-SUFFIX,metademolab.com         # Meta AI 实验项目
-DOMAIN-SUFFIX,perplexity.ai           # Perplexity AI
-DOMAIN-SUFFIX,grok.com                # Grok AI (x.ai 关联)
-DOMAIN-SUFFIX,x.ai                    # Grok AI 官网
-DOMAIN-SUFFIX,cursor.com              # Cursor AI 代码编辑器
-DOMAIN-SUFFIX,groq.com                # Groq (AI 推理芯片及服务)
+
+# =========================
+# xAI (Elon Musk / Grok)
+# =========================
+DOMAIN-SUFFIX,grok.com                # Grok AI 官网
+DOMAIN-SUFFIX,x.ai                    # xAI 官网 (Grok)
+DOMAIN-SUFFIX,x.com                   # Twitter/X (集成 Grok)
+
+# =========================
+# AI 搜索 / 聚合平台
+# =========================
+DOMAIN-SUFFIX,perplexity.ai           # Perplexity AI 搜索
+DOMAIN-SUFFIX,you.com                 # You.com AI 搜索及聊天
+DOMAIN-SUFFIX,phind.com               # Phind (AI 搜索，偏编程)
+DOMAIN-SUFFIX,poe.com                 # Poe (多模型聚合平台)
+
+# =========================
+# 大模型 / 平台厂商
+# =========================
+DOMAIN-SUFFIX,mistral.ai              # Mistral AI 主站
+DOMAIN-SUFFIX,cohere.com              # Cohere (企业级 LLM 平台)
+DOMAIN-SUFFIX,groq.com                # Groq (AI 加速芯片/推理服务)
 DOMAIN-SUFFIX,difyai.com              # Dify (LLM 应用开发平台)
 DOMAIN-SUFFIX,genspark.ai             # GenSpark AI
-DOMAIN-SUFFIX,civitai.com             # AI艺术/模型社区 (Stable Diffusion等)
-DOMAIN-SUFFIX,opera-api.com           # Opera浏览器内置AI功能相关
-DOMAIN-SUFFIX,ciciai.com              # CICIAI (一个AI图像/设计工具)
-DOMAIN-SUFFIX,mistral.ai              # Mistral AI (欧洲领先的LLM公司)
-DOMAIN-SUFFIX,cohere.com              # Cohere (企业级LLM平台)
-DOMAIN-SUFFIX,huggingface.co          # Hugging Face (AI模型社区和平台)
-DOMAIN-SUFFIX,replicate.com           # Replicate (运行AI模型服务)
-DOMAIN-SUFFIX,elevenlabs.io           # ElevenLabs (AI语音合成)
-DOMAIN-SUFFIX,midjourney.com          # Midjourney (AI图像生成)
-DOMAIN-SUFFIX,stability.ai            # Stability AI (Stable Diffusion开发者)
-DOMAIN-SUFFIX,deepmind.com            # Google DeepMind
-DOMAIN-SUFFIX,you.com                 # You.com (AI搜索及聊天)
-DOMAIN-SUFFIX,phind.com               # Phind (AI搜索，尤其擅长编程)
-DOMAIN-SUFFIX,runwayml.com            # RunwayML (AI视频生成及编辑)
-DOMAIN-SUFFIX,pika.art                # Pika (AI视频生成)
-DOMAIN-SUFFIX,heygen.com              # HeyGen (AI视频生成，数字人)
-DOMAIN-SUFFIX,krea.ai                 # Krea AI (实时AI图像生成及增强)
-DOMAIN-SUFFIX,gamma.app               # Gamma (AI演示文稿制作)
-DOMAIN-SUFFIX,tome.app                # Tome (AI演示文稿制作)
-DOMAIN-SUFFIX,chat.lmsys.org          # LM Sys (Vicuna等开源模型在线试用)
-DOMAIN-SUFFIX,poe.com                 # Poe (多个AI模型聚合平台)
-DOMAIN-SUFFIX,writesonic.com          # Writesonic (AI写作助手)
-DOMAIN-SUFFIX,jasper.ai               # Jasper (AI写作及内容生成)
-DOMAIN-SUFFIX,notion.so               # Notion AI (如果希望包含Notion的AI功能)
-DOMAIN-SUFFIX,notion.site             # Notion AI (同上)
-DOMAIN-SUFFIX,zoom.us                 # Zoom AI Companion (如果希望包含Zoom的AI功能)
-DOMAIN-SUFFIX,slack.com               # Slack AI (如果希望包含Slack的AI功能)
-DOMAIN-SUFFIX,bing.com                # Bing Chat/Copilot集成
-DOMAIN-SUFFIX,x.com                   # Twitter/X (集成Grok)
+
+# =========================
+# AI 社区 / 模型托管
+# =========================
+DOMAIN-SUFFIX,huggingface.co          # Hugging Face (AI 模型社区)
+DOMAIN-SUFFIX,replicate.com           # Replicate (AI 模型运行平台)
+DOMAIN-SUFFIX,civitai.com             # Civitai (AI 模型/艺术社区)
+
+# =========================
+# AI 应用工具 (写作 / 代码 / 内容生成)
+# =========================
+DOMAIN-SUFFIX,cursor.com              # Cursor AI 代码编辑器
+DOMAIN-SUFFIX,writesonic.com          # Writesonic (AI 写作助手)
+DOMAIN-SUFFIX,jasper.ai               # Jasper (AI 内容生成)
+
+# =========================
+# AI 语音 / 图像 / 视频生成
+# =========================
+DOMAIN-SUFFIX,elevenlabs.io           # ElevenLabs (AI 语音合成)
+DOMAIN-SUFFIX,midjourney.com          # Midjourney (AI 图像生成)
+DOMAIN-SUFFIX,stability.ai            # Stability AI (Stable Diffusion)
+DOMAIN-SUFFIX,runwayml.com            # RunwayML (AI 视频生成/编辑)
+DOMAIN-SUFFIX,pika.art                # Pika (AI 视频生成)
+DOMAIN-SUFFIX,heygen.com              # HeyGen (AI 数字人/视频生成)
+DOMAIN-SUFFIX,krea.ai                 # Krea AI (实时图像生成/增强)
+DOMAIN-SUFFIX,ciciai.com              # CICIAI (图像/设计 AI 工具)
+
+# =========================
+# AI 演示文稿 / 文档
+# =========================
+DOMAIN-SUFFIX,gamma.app               # Gamma (AI 演示文稿)
+DOMAIN-SUFFIX,tome.app                # Tome (AI 演示文稿)
+
+# =========================
+# AI 研究 / 实验平台
+# =========================
+DOMAIN-SUFFIX,chat.lmsys.org          # LMSys (Vicuna 等开源模型试用)
+
+# =========================
+# 平台集成 AI 功能
+# =========================
+DOMAIN-SUFFIX,notion.so               # Notion AI 功能 (主站)
+DOMAIN-SUFFIX,notion.site             # Notion AI 功能 (页面托管)
+DOMAIN-SUFFIX,zoom.us                 # Zoom AI Companion
+DOMAIN-SUFFIX,slack.com               # Slack AI
+DOMAIN-SUFFIX,opera-api.com           # Opera 浏览器 AI 功能
