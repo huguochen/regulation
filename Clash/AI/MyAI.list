@@ -1,14 +1,5 @@
 # 内容：MyAI
 
-DOMAIN-SUFFIX,chatgpt.com             # OpenAI ChatGPT
-DOMAIN-SUFFIX,openai.com              # OpenAI 主站及API
-DOMAIN-SUFFIX,oaiusercontent.com      # OpenAI 用户内容托管
-DOMAIN-SUFFIX,copilot.cloud.microsoft # Microsoft Copilot 云服务
-DOMAIN-SUFFIX,copilot.microsoft.com   # Microsoft Copilot 主站
-DOMAIN-SUFFIX,aistudio.google.com     # Google AI Studio
-DOMAIN-SUFFIX,gemini.google.com       # Google Gemini
-DOMAIN-SUFFIX,anthropic.com           # Anthropic 主站及API
-DOMAIN-SUFFIX,claude.ai               # Anthropic Claude
 DOMAIN-SUFFIX,meta.ai                 # Meta AI 主站
 DOMAIN-SUFFIX,metademolab.com         # Meta AI 实验项目
 DOMAIN-SUFFIX,perplexity.ai           # Perplexity AI
