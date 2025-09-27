@@ -7,7 +7,6 @@ DOMAIN-SUFFIX,copilot.cloud.microsoft # Microsoft Copilot 云服务
 DOMAIN-SUFFIX,copilot.microsoft.com   # Microsoft Copilot 主站
 DOMAIN-SUFFIX,aistudio.google.com     # Google AI Studio
 DOMAIN-SUFFIX,gemini.google.com       # Google Gemini
-DOMAIN-SUFFIX,makersuite.google.com   # Google MakerSuite
 DOMAIN-SUFFIX,anthropic.com           # Anthropic 主站及API
 DOMAIN-SUFFIX,claude.ai               # Anthropic Claude
 DOMAIN-SUFFIX,meta.ai                 # Meta AI 主站
