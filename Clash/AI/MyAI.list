@@ -6,7 +6,6 @@ DOMAIN-SUFFIX,oaiusercontent.com      # OpenAI 用户内容托管
 DOMAIN-SUFFIX,copilot.cloud.microsoft # Microsoft Copilot 云服务
 DOMAIN-SUFFIX,copilot.microsoft.com   # Microsoft Copilot 主站
 DOMAIN-SUFFIX,aistudio.google.com     # Google AI Studio
-DOMAIN-SUFFIX,bard.google.com         # Google Bard (现在多重定向到Gemini)
 DOMAIN-SUFFIX,gemini.google.com       # Google Gemini
 DOMAIN-SUFFIX,makersuite.google.com   # Google MakerSuite
 DOMAIN-SUFFIX,anthropic.com           # Anthropic 主站及API
