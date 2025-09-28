@@ -1,86 +1,61 @@
 # 内容：MyAI
 
-# OpenAI
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,api.openai.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,auth0.openai.com
-
-# Microsoft (Copilot / Bing)
-DOMAIN-SUFFIX,copilot.microsoft.com
-DOMAIN-SUFFIX,bing.com
-DOMAIN-SUFFIX,api.microsoft.com
-
-# Google (Gemini / DeepMind)
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,aistudio.google.com
-DOMAIN-SUFFIX,cloud.google.com
-DOMAIN-SUFFIX,deepmind.com
-
-# Anthropic (Claude)
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-
 # Meta AI
-DOMAIN-SUFFIX,meta.ai
-DOMAIN-SUFFIX,ai.facebook.com
+- DOMAIN-SUFFIX,meta.ai,MyAI
+- DOMAIN-SUFFIX,ai.facebook.com,MyAI
 
 # xAI (Grok)
-DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,x.ai
+- DOMAIN-SUFFIX,grok.com,MyAI
+- DOMAIN-SUFFIX,x.ai,MyAI
 
 # AI 搜索 / 聚合平台
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,you.com
-DOMAIN-SUFFIX,phind.com
-DOMAIN-SUFFIX,poe.com
+- DOMAIN-SUFFIX,perplexity.ai,MyAI
+- DOMAIN-SUFFIX,you.com,MyAI
+- DOMAIN-SUFFIX,phind.com,MyAI
+- DOMAIN-SUFFIX,poe.com,MyAI
 
 # 大模型 / 平台厂商
-DOMAIN-SUFFIX,mistral.ai
-DOMAIN-SUFFIX,cohere.com
-DOMAIN-SUFFIX,groq.com
-DOMAIN-SUFFIX,difyai.com
-DOMAIN-SUFFIX,genspark.ai
+- DOMAIN-SUFFIX,mistral.ai,MyAI
+- DOMAIN-SUFFIX,cohere.com,MyAI
+- DOMAIN-SUFFIX,groq.com,MyAI
+- DOMAIN-SUFFIX,difyai.com,MyAI
+- DOMAIN-SUFFIX,genspark.ai,MyAI
 
 # AI 社区 / 模型托管
-DOMAIN-SUFFIX,huggingface.co
-DOMAIN-SUFFIX,inference.huggingface.co
-DOMAIN-SUFFIX,replicate.com
-DOMAIN-SUFFIX,civitai.com
+- DOMAIN-SUFFIX,huggingface.co,MyAI
+- DOMAIN-SUFFIX,inference.huggingface.co,MyAI
+- DOMAIN-SUFFIX,replicate.com,MyAI
+- DOMAIN-SUFFIX,civitai.com,MyAI
 
 # AI 应用工具
-DOMAIN-SUFFIX,cursor.com
-DOMAIN-SUFFIX,writesonic.com
-DOMAIN-SUFFIX,jasper.ai
+- DOMAIN-SUFFIX,cursor.com,MyAI
+- DOMAIN-SUFFIX,writesonic.com,MyAI
+- DOMAIN-SUFFIX,jasper.ai,MyAI
 
 # AI 语音 / 图像 / 视频生成
-DOMAIN-SUFFIX,elevenlabs.io
-DOMAIN-SUFFIX,midjourney.com
-DOMAIN-SUFFIX,stability.ai
-DOMAIN-SUFFIX,dreamstudio.ai
-DOMAIN-SUFFIX,runwayml.com
-DOMAIN-SUFFIX,pika.art
-DOMAIN-SUFFIX,heygen.com
-DOMAIN-SUFFIX,krea.ai
-DOMAIN-SUFFIX,ciciai.com
+- DOMAIN-SUFFIX,elevenlabs.io,MyAI
+- DOMAIN-SUFFIX,midjourney.com,MyAI
+- DOMAIN-SUFFIX,stability.ai,MyAI
+- DOMAIN-SUFFIX,dreamstudio.ai,MyAI
+- DOMAIN-SUFFIX,runwayml.com,MyAI
+- DOMAIN-SUFFIX,pika.art,MyAI
+- DOMAIN-SUFFIX,heygen.com,MyAI
+- DOMAIN-SUFFIX,krea.ai,MyAI
+- DOMAIN-SUFFIX,ciciai.com,MyAI
 
 # AI 演示文稿 / 文档
-DOMAIN-SUFFIX,gamma.app
-DOMAIN-SUFFIX,tome.app
+- DOMAIN-SUFFIX,gamma.app,MyAI
+- DOMAIN-SUFFIX,tome.app,MyAI
 
 # AI 研究 / 实验平台
-DOMAIN-SUFFIX,chat.lmsys.org
+- DOMAIN-SUFFIX,chat.lmsys.org,MyAI
 
 # 平台集成 AI 功能
-DOMAIN-SUFFIX,notion.so
-DOMAIN-SUFFIX,notion.site
+- DOMAIN-SUFFIX,notion.so,MyAI
+- DOMAIN-SUFFIX,notion.site,MyAI
 
 # 其他 AI 服务
-DOMAIN-SUFFIX,character.ai
-DOMAIN-SUFFIX,deepl.com
-DOMAIN-SUFFIX,bedrock.aws.amazon.com
-DOMAIN-SUFFIX,ngc.nvidia.com
-DOMAIN-SUFFIX,zoom.us
-DOMAIN-SUFFIX,slack.com
-DOMAIN-SUFFIX,opera-api.com
+- DOMAIN-SUFFIX,character.ai,MyAI
+- DOMAIN-SUFFIX,deepl.com,MyAI
+- DOMAIN-SUFFIX,bedrock.aws.amazon.com,MyAI
+- DOMAIN-SUFFIX,ngc.nvidia.com,MyAI
