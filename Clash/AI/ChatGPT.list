@@ -3,7 +3,6 @@
 
 DOMAIN,api.openai.com
 DOMAIN,platform.openai.com
-DOMAIN-KEYWORD,openai
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,chatgpt.com
