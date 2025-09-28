@@ -1,22 +1,5 @@
 # 内容：MyAI
 
-# OpenAI
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,oaiusercontent.com
-# Microsoft (Copilot / Bing)
-DOMAIN-SUFFIX,copilot.cloud.microsoft
-DOMAIN-SUFFIX,copilot.microsoft.com
-DOMAIN-SUFFIX,bing.com
-# Google (Gemini / DeepMind)
-DOMAIN-SUFFIX,aistudio.google.com
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN-SUFFIX,deepmind.com
-# Anthropic (Claude)
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
 # Meta (LLaMA / AI 实验)
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,metademolab.com
