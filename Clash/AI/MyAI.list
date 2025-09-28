@@ -1,39 +1,65 @@
-# 内容：MyAI
+# MyAI
 
+# OpenAI
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,oaiusercontent.com
+# Microsoft (Copilot / Bing)
+DOMAIN-SUFFIX,copilot.cloud.microsoft
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,bing.com
+# Google (Gemini / DeepMind)
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,deepmind.com
+# Anthropic (Claude)
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+# Meta (LLaMA / AI 实验)
 DOMAIN-SUFFIX,meta.ai
-DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,metademolab.com
+# xAI (Elon Musk / Grok)
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,x.com
+# AI 搜索 / 聚合平台
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,you.com
 DOMAIN-SUFFIX,phind.com
 DOMAIN-SUFFIX,poe.com
+# 大模型 / 平台厂商
 DOMAIN-SUFFIX,mistral.ai
 DOMAIN-SUFFIX,cohere.com
 DOMAIN-SUFFIX,groq.com
 DOMAIN-SUFFIX,difyai.com
 DOMAIN-SUFFIX,genspark.ai
+# AI 社区 / 模型托管
 DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,replicate.com
 DOMAIN-SUFFIX,civitai.com
+# AI 应用工具
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,writesonic.com
 DOMAIN-SUFFIX,jasper.ai
+# AI 语音 / 图像 / 视频生成
 DOMAIN-SUFFIX,elevenlabs.io
 DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,stability.ai
-DOMAIN-SUFFIX,dreamstudio.ai
 DOMAIN-SUFFIX,runwayml.com
 DOMAIN-SUFFIX,pika.art
 DOMAIN-SUFFIX,heygen.com
 DOMAIN-SUFFIX,krea.ai
 DOMAIN-SUFFIX,ciciai.com
+# AI 演示文稿 / 文档
 DOMAIN-SUFFIX,gamma.app
 DOMAIN-SUFFIX,tome.app
-DOMAIN-SUFFIX,lmsys.org
+# AI 研究 / 实验平台
+DOMAIN-SUFFIX,chat.lmsys.org
+# 平台集成 AI 功能
 DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,notion.site
-DOMAIN-SUFFIX,character.ai
-DOMAIN-SUFFIX,deepl.com
-DOMAIN-SUFFIX,amazonaws.com
-DOMAIN-SUFFIX,nvidia.com
+DOMAIN-SUFFIX,zoom.us
+DOMAIN-SUFFIX,slack.com
+DOMAIN-SUFFIX,opera-api.com
