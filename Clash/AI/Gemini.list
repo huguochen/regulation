@@ -10,6 +10,7 @@ DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,apis.google.com
-DOMAIN-KEYWORD,colab
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-KEYWORD,colabgenerativelanguage.googleapis.com
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
