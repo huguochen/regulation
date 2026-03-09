@@ -1,0 +1,720 @@
+# ========================
+# Clash-HGC 优化配置
+# ========================
+
+# -----------------------------------------------------------------------------
+# 策略组 (Proxy Groups)
+# 这些策略组将使用您 OpenClash 订阅转换后获取的代理节点。
+# 请确保这些策略组能够引用到实际的代理节点或机场生成的默认代理组！
+# 在这里的 proxies 列表中，建议确保有一个能引用到机场代理的选项，例如 'PROXY'（常见的机场默认代理组名）
+# -----------------------------------------------------------------------------
+
+proxy-groups:
+  # 策略组默认锚点定义
+  default: &default-proxy-group
+    type: select
+    tolerance: 50
+    hidden: false
+    lazy: false
+    disguise: false
+    disable-udp: false
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    timeout: 5000
+    max-history: 10
+
+  # AI 智能相关
+  - &ai-group
+    <<: *default-proxy-group
+    name: AI
+    proxies:
+      - 直连
+      # 可以考虑加入机场默认的代理选择组，例如：- PROXY
+      - 新加坡-故转
+      - 台湾-故转
+      - 日本-故转
+      - 美国-故转
+      - 香港-故转
+      - 其他-故转
+      - 拒绝
+
+  # Sex 内容
+  - &sex-group
+    <<: *default-proxy-group
+    name: Sex
+    proxies:
+      - 直连
+      # - PROXY
+      - 美国-故转
+      - 其他-故转
+      - 拒绝
+
+  # Test 测试组
+  - &test-group
+    <<: *default-proxy-group
+    name: Test
+    proxies:
+      - 直连
+      # - PROXY
+      - 新加坡-故转
+      - 台湾-故转
+      - 日本-故转
+      - 美国-故转
+      - 香港-故转
+      - 其他-故转
+      - 拒绝
+
+  # Youtube
+  - &youtube-group
+    <<: *default-proxy-group
+    name: Youtube
+    proxies:
+      - 直连
+      # - PROXY
+      - 新加坡-故转
+      - 台湾-故转
+      - 日本-故转
+      - 美国-故转
+      - 香港-故转
+      - 其他-故转
+      - 拒绝
+
+  # Google
+  - &google-group
+    <<: *default-proxy-group
+    name: Google
+    proxies:
+      - 直连
+      # - PROXY
+      - 新加坡-故转
+      - 台湾-故转
+      - 日本-故转
+      - 美国-故转
+      - 香港-故转
+      - 其他-故转
+      - 拒绝
+
+  # Microsoft
+  - &microsoft-group
+    <<: *default-proxy-group
+    name: Microsoft
+    proxies:
+      - 直连
+      # - PROXY
+      - 新加坡-故转
+      - 台湾-故转
+      - 日本-故转
+      - 美国-故转
+      - 香港-故转
+      - 其他-故转
+      - 拒绝
+
+  # Apple
+  - &apple-group
+    <<: *default-proxy-group
+    name: Apple
+    proxies:
+      - 直连
+      # - PROXY
+      - 新加坡-故转
+      - 台湾-故转
+      - 日本-故转
+      - 美国-故转
+      - 香港-故转
+      - 其他-故转
+      - 拒绝
+
+  # Crypto 加密货币
+  - &crypto-group
+    <<: *default-proxy-group
+    name: Crypto
+    proxies:
+      # - PROXY
+      - 新加坡-故转
+      - 美国-故转
+      - 香港-故转
+      - 拒绝
+
+  # Stream Media 流媒体
+  - &stream-media-group
+    <<: *default-proxy-group
+    name: Stream_Media
+    proxies:
+      # - PROXY
+      - 新加坡-故转
+      - 台湾-故转
+      - 日本-故转
+      - 美国-故转
+      - 香港-故转
+      - 其他-故转
+      - 拒绝
+
+  # Games 游戏
+  - &games-group
+    <<: *default-proxy-group
+    name: Games
+    proxies:
+      # - PROXY
+      - 新加坡-故转
+      - 台湾-故转
+      - 日本-故转
+      - 美国-故转
+      - 香港-故转
+      - 其他-故转
+      - 拒绝
+
+  # Nvidia
+  - &nvidia-group
+    <<: *default-proxy-group
+    name: Nvidia
+    proxies:
+      - 直连
+      # - PROXY
+      - 新加坡-故转
+      - 台湾-故转
+      - 日本-故转
+      - 美国-故转
+      - 香港-故转
+      - 其他-故转
+      - 拒绝
+
+  # Adobe
+  - &adobe-group
+    <<: *default-proxy-group
+    name: Adobe
+    proxies:
+      - 直连
+      # - PROXY
+      - 新加坡-故转
+      - 台湾-故转
+      - 日本-故转
+      - 美国-故转
+      - 香港-故转
+      - 其他-故转
+      - 拒绝
+
+  # 国外流量
+  - &foreign-group
+    <<: *default-proxy-group
+    name: 国外
+    proxies:
+      # - PROXY
+      - 新加坡-故转
+      - 台湾-故转
+      - 日本-故转
+      - 美国-故转
+      - 香港-故转
+      - 其他-故转
+      - 拒绝
+
+  # 国内流量
+  - &domestic-group
+    <<: *default-proxy-group
+    name: 国内
+    proxies:
+      - 直连
+      - 拒绝
+
+  # 拒绝
+  - &reject-group
+    <<: *default-proxy-group
+    name: 拒绝
+    type: reject
+
+  # 直连
+  - &direct-group
+    <<: *default-proxy-group
+    name: 直连
+    type: direct
+
+  # 其他（默认策略）
+  - &other-group
+    <<: *default-proxy-group
+    name: 其他
+    type: select
+    proxies:
+      # - PROXY # 可以考虑在这里加入机场默认的代理选择组
+      - 新加坡-故转
+      - 台湾-故转
+      - 日本-故转
+      - 美国-故转
+      - 香港-故转
+      - 直连
+      - 拒绝
+
+  # 以下是您定义的地域选择组，它们需要实际的节点作为候选项
+  # 请注意：这里的 proxies 列表需要由您在 OpenClash 的订阅转换中进行处理，
+  # 以引用到机场订阅中具体节点名称或通过 filter 筛选。
+  - &hk-group
+    <<: *default-proxy-group
+    name: 香港-故转
+    type: select
+    proxies: [] # 初始为空，待合并后由 OpenClash 自动填充或在此处手动填写具体节点名
+
+  - &tw-group
+    <<: *default-proxy-group
+    name: 台湾-故转
+    type: select
+    proxies: []
+
+  - &sg-group
+    <<: *default-proxy-group
+    name: 新加坡-故转
+    type: select
+    proxies: []
+
+  - &jp-group
+    <<: *default-proxy-group
+    name: 日本-故转
+    type: select
+    proxies: []
+
+  - &us-group
+    <<: *default-proxy-group
+    name: 美国-故转
+    type: select
+    proxies: []
+
+  - &other-regions-group
+    <<: *default-proxy-group
+    name: 其他-故转
+    type: select
+    proxies: []
+
+# -----------------------------------------------------------------------------
+# 规则锚点 (Rule Anchors)
+# -----------------------------------------------------------------------------
+
+rule-anchor:
+  ip: {type: http, interval: 86400, behavior: ipcidr, format: mrs}
+  domain: {type: http, interval: 86400, behavior: domain, format: mrs}
+  class: {type: http, interval: 86400, behavior: classical, format: text}
+
+# -----------------------------------------------------------------------------
+# 规则提供者 (Rule Providers)
+# 这些规则提供者将从远程 URL 获取规则列表。
+# -----------------------------------------------------------------------------
+
+rule-providers:
+  ChatGPT / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/ChatGPT.txt"
+    interval: 86400
+    path: ./ruleset/ChatGPT / Domain.yaml
+
+  Claude / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Claude.txt"
+    interval: 86400
+    path: ./ruleset/Claude / Domain.yaml
+
+  Groq / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Groq.txt"
+    interval: 86400
+    path: ./ruleset/Groq / Domain.yaml
+
+  Grok / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Grok.txt"
+    interval: 86400
+    path: ./ruleset/Grok / Domain.yaml
+
+  Meta AI / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/MetaAI.txt"
+    interval: 86400
+    path: ./ruleset/Meta AI / Domain.yaml
+
+  Perplexity / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Perplexity.txt"
+    interval: 86400
+    path: ./ruleset/Perplexity / Domain.yaml
+
+  Copilot / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Copilot.txt"
+    interval: 86400
+    path: ./ruleset/Copilot / Domain.yaml
+
+  Gemini / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Gemini.txt"
+    interval: 86400
+    path: ./ruleset/Gemini / Domain.yaml
+
+  Sex / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Pornhub.txt"
+    interval: 86400
+    path: ./ruleset/Sex / Domain.yaml
+
+  Test / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Test.txt"
+    interval: 86400
+    path: ./ruleset/Test / Domain.yaml
+
+  Youtube / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/YouTube.txt"
+    interval: 86400
+    path: ./ruleset/Youtube / Domain.yaml
+
+  Google / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Google.txt"
+    interval: 86400
+    path: ./ruleset/Google / Domain.yaml
+
+  Google / IP:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Google.txt"
+    interval: 86400
+    path: ./ruleset/Google / IP.yaml
+
+  Microsoft / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Microsoft.txt"
+    interval: 86400
+    path: ./ruleset/Microsoft / Domain.yaml
+
+  Apple / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Apple.txt"
+    interval: 86400
+    path: ./ruleset/Apple / Domain.yaml
+
+  Apple-CN / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Apple_CN.txt"
+    interval: 86400
+    path: ./ruleset/Apple-CN / Domain.yaml
+
+  Apple-Custome / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Apple.txt"
+    interval: 86400
+    path: ./ruleset/Apple-Custome / Domain.yaml
+
+  OKX / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/OKX.txt"
+    interval: 86400
+    path: ./ruleset/OKX / Domain.yaml
+
+  Bybit / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Bybit.txt"
+    interval: 86400
+    path: ./ruleset/Bybit / Domain.yaml
+
+  Binance / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Binance.txt"
+    interval: 86400
+    path: ./ruleset/Binance / Domain.yaml
+
+  TikTok / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/TikTok.txt"
+    interval: 86400
+    path: ./ruleset/TikTok / Domain.yaml
+
+  Netflix / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Netflix.txt"
+    interval: 86400
+    path: ./ruleset/Netflix / Domain.yaml
+
+  Netflix / IP:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Netflix.txt"
+    interval: 86400
+    path: ./ruleset/Netflix / IP.yaml
+
+  Disney / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Disney.txt"
+    interval: 86400
+    path: ./ruleset/Disney / Domain.yaml
+
+  Amazon / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Amazon.txt"
+    interval: 86400
+    path: ./ruleset/Amazon / Domain.yaml
+
+  HBO / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/HBO.txt"
+    interval: 86400
+    path: ./ruleset/HBO / Domain.yaml
+
+  Crunchyroll / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Crunchyroll.txt"
+    interval: 86400
+    path: ./ruleset/Crunchyroll / Domain.yaml
+
+  Popcorn / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Popcorn.txt"
+    interval: 86400
+    path: ./ruleset/Popcorn / Domain.yaml
+
+  Spotify / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Spotify.txt"
+    interval: 86400
+    path: ./ruleset/Spotify / Domain.yaml
+
+  Steam / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Steam.txt"
+    interval: 86400
+    path: ./ruleset/Steam / Domain.yaml
+
+  Epic / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Epic.txt"
+    interval: 86400
+    path: ./ruleset/Epic / Domain.yaml
+
+  EA / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/EA.txt"
+    interval: 86400
+    path: ./ruleset/EA / Domain.yaml
+
+  Blizzard / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Blizzard.txt"
+    interval: 86400
+    path: ./ruleset/Blizzard / Domain.yaml
+
+  UBI / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Ubisoft.txt"
+    interval: 86400
+    path: ./ruleset/UBI / Domain.yaml
+
+  PlayStation / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/PlayStation.txt"
+    interval: 86400
+    path: ./ruleset/PlayStation / Domain.yaml
+
+  Nintend / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Nintendo.txt"
+    interval: 86400
+    path: ./ruleset/Nintend / Domain.yaml
+
+  Nvidia / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Nvidia.txt"
+    interval: 86400
+    path: ./ruleset/Nvidia / Domain.yaml
+
+  Adobe / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Adobe.txt"
+    interval: 86400
+    path: ./ruleset/Adobe / Domain.yaml
+
+  AdobeActivation / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Adobe.txt"
+    interval: 86400
+    path: ./ruleset/AdobeActivation / Domain.yaml
+
+  Proxy / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Proxy.txt"
+    interval: 86400
+    path: ./ruleset/Proxy / Domain.yaml
+
+  Globe / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Globe.txt"
+    interval: 86400
+    path: ./ruleset/Globe / Domain.yaml
+
+  Reddit / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Reddit.txt"
+    interval: 86400
+    path: ./ruleset/Reddit / Domain.yaml
+
+  DirectH / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Direct.txt"
+    interval: 86400
+    path: ./ruleset/DirectH / Domain.yaml
+
+  Direct / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Direct.txt"
+    interval: 86400
+    path: ./ruleset/Direct / Domain.yaml
+
+  China / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/China.txt"
+    interval: 86400
+    path: ./ruleset/China / Domain.yaml
+
+  China / IP:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/China.txt"
+    interval: 86400
+    path: ./ruleset/China / IP.yaml
+
+  Private / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Private.txt"
+    interval: 86400
+    path: ./ruleset/Private / Domain.yaml
+
+  Block / Domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/ruleset/Block.txt"
+    interval: 86400
+    path: ./ruleset/Block / Domain.yaml
+
+# -----------------------------------------------------------------------------
+# 规则 (Rules)
+# 这些规则定义了流量如何被分流到不同的策略组。
+# -----------------------------------------------------------------------------
+
+rules:
+  # AI 相关规则
+  - RULE-SET,ChatGPT / Domain,AI
+  - RULE-SET,Claude / Domain,AI
+  - RULE-SET,Groq / Domain,AI
+  - RULE-SET,Grok / Domain,AI
+  - RULE-SET,Meta AI / Domain,AI
+  - RULE-SET,Perplexity / Domain,AI
+  - RULE-SET,Copilot / Domain,AI
+  - RULE-SET,Gemini / Domain,AI
+
+  # Sex 规则
+  - RULE-SET,Sex / Domain,Sex
+
+  # Test 规则
+  - RULE-SET,Test / Domain,Test
+
+  # Youtube 规则
+  - RULE-SET,Youtube / Domain,Youtube
+
+  # Google 规则
+  - RULE-SET,Google / Domain,Google
+  - RULE-SET,Google / IP,Google
+
+  # Microsoft 规则
+  - RULE-SET,Microsoft / Domain,Microsoft
+
+  # Apple 规则
+  - RULE-SET,Apple / Domain,Apple
+  - RULE-SET,Apple-CN / Domain,Apple
+  - RULE-SET,Apple-Custome / Domain,Apple
+
+  # Crypto (加密货币) 规则
+  - RULE-SET,OKX / Domain,Crypto
+  - RULE-SET,Bybit / Domain,Crypto
+  - RULE-SET,Binance / Domain,Crypto
+
+  # Stream Media (流媒体) 规则
+  - RULE-SET,TikTok / Domain,Stream_Media
+  - RULE-SET,Netflix / Domain,Stream_Media
+  - RULE-SET,Netflix / IP,Stream_Media
+  - RULE-SET,Disney / Domain,Stream_Media
+  - RULE-SET,Amazon / Domain,Stream_Media
+  - RULE-SET,HBO / Domain,Stream_Media
+  - RULE-SET,Crunchyroll / Domain,Stream_Media
+  - RULE-SET,Popcorn / Domain,Stream_Media
+  - RULE-SET,Spotify / Domain,Stream_Media
+
+  # Games (游戏) 规则
+  - RULE-SET,Steam / Domain,Games
+  - RULE-SET,Epic / Domain,Games
+  - RULE-SET,EA / Domain,Games
+  - RULE-SET,Blizzard / Domain,Games
+  - RULE-SET,UBI / Domain,Games
+  - RULE-SET,PlayStation / Domain,Games
+  - RULE-SET,Nintend / Domain,Games
+
+  # Nvidia 规则
+  - RULE-SET,Nvidia / Domain,Nvidia
+
+  # Adobe 规则
+  - RULE-SET,Adobe / Domain,Adobe
+  - RULE-SET,AdobeActivation / Domain,Adobe
+
+  # 国外流量规则 (Proxy / Globe / Reddit)
+  - RULE-SET,Proxy / Domain,国外
+  - RULE-SET,Globe / Domain,国外
+  - RULE-SET,Reddit / Domain,国外
+
+  # 国内流量规则 (DirectH / Direct / China / Private)
+  - RULE-SET,DirectH / Domain,国内
+  - RULE-SET,Direct / Domain,国内
+  - RULE-SET,China / Domain,国内
+  - RULE-SET,China / IP,国内
+  - RULE-SET,Private / Domain,国内
+
+  # Block (屏蔽) 规则
+  - RULE-SET,Block / Domain,拒绝
+
+  # 最终匹配规则：如果以上规则都未命中，则匹配到 "其他" 策略组
+  - MATCH,其他
